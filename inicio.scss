@@ -1,0 +1,16 @@
+#inicio {
+    background: darken(red, 30%);
+    height: 100vh;
+
+    @include adaptar(telefono){
+        // @content
+
+        background: colorAmarillo();
+    }
+
+    .encabezado {
+        @include bordesVerdes();
+    }
+    
+}
+

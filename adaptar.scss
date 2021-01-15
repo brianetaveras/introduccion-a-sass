@@ -1,0 +1,49 @@
+@mixin adaptar($tamano){
+
+    @if $tamano == monitor {
+        @media #{$monitor} {
+            @content;
+        } 
+    }
+    @else if $tamano == tablet {
+        @media #{$tablet} {
+            @content;
+        } 
+    }
+    @else if $tamano == telefono {
+        @media #{$telefono} {
+            @content;
+        } 
+    }
+}
+
+@mixin bordesVerdes(){
+    border: 5px dashed green;
+}
+
+
+$colores: (red, blue, yellow, cyan, magenta, black);
+
+@each $c in $colores {
+    .#{"" + $c}-background{
+        background: red ;
+    }
+}
+
+
+$limite: 100;
+
+@for $i from 0 through $limite {
+    .margen-#{$i}{
+        margin: #{$i}px;
+    }
+
+    .fuente-#{$i}{
+        font-size: #{$i}px;
+    }
+}
+
+
+@function colorAmarillo(){
+    @return yellow;
+}
