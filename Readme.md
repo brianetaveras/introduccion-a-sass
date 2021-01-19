@@ -20,7 +20,7 @@ Luego de tener NodeJS instalado, ejecuten el siguiente comando para instalar sas
 
 `npm install sass -g`
 
-Luego de instalar Sass, pueden ejecutar el siguiente comando en su terminal:
+Luego de instalar Sass, pueden ejecutar el siguiente comando en su terminal para compilar el SCSS a CSS:
 
 `sass --watch RUTA_AL_ARCHIVO_SCSS DESTINO_DEL_CSS`
  
